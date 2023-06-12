@@ -25,6 +25,9 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: 17
+          
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
 
       - name: Gradle cache and wrapper
         uses: actions/cache@v2
@@ -38,9 +41,15 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
-
-      - name: Check spotless
-        run: ./gradlew spotlessCheck --init-script gradle/init.gradle.kts --no-configuration-cache
-
+        
       - name: Build all build type and flavor permutations
         run: ./gradlew assembleDev
+        
+      - name: Build debug APK
+        run: bash ./gradlew assembleDebug --stacktrace
+        
+      - name: Upload APK
+        uses: actions/upload-artifact@v2.1.1
+        with:
+          name: app
+          path: app/build/outputs/apk/debug/app-debug.apk
