@@ -1,14 +1,21 @@
 [versions]
 agp = "8.2.0-alpha07"
 kotlin = "1.8.10"
-core-ktx = "1.9.0"
+core-ktx = "1.10.1"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 lifecycle-runtime-ktx = "2.6.1"
 activity-compose = "1.7.2"
-compose-bom = "2023.03.00"
-splash-screen = "1.0.0"
+compose-bom = "2023.06.00"
+splash-screen = "1.0.1"
+maps-compose = "2.7.2"
+play-services-maps = "18.1.0"
+dexter="6.2.3"
+track-me="1.0.1"
+network-state-observer="1.1.2"
+simple-store="1.1.1"
+accompanist-permissions="0.23.1"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -26,6 +33,14 @@ ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 splash-screen = { group = "androidx.core", name = "core-splashscreen",  version.ref = "splash-screen"}
+maps-compose = { group = "com.google.maps.android", name = "maps-compose",  version.ref = "maps-compose"}
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps",  version.ref = "play-services-maps"}
+dexter = { group = "com.karumi", name = "dexter", version.ref = "dexter" }
+track-me = { group = "com.github.RhymezxCode", name = "TrackMe", version.ref = "track-me" }
+network-state-observer = { group = "com.github.RhymezxCode", name = "NetworkStateObserver", version.ref = "network-state-observer" }
+simple-store = { group = "com.github.RhymezxCode", name = "SimpleStore", version.ref = "simple-store" }
+accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist-permissions" }
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

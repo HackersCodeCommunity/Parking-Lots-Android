@@ -70,4 +70,21 @@ dependencies {
 
     //new splash-screen approach
     implementation(libs.splash.screen)
+
+    //map
+    implementation(libs.maps.compose)
+    implementation(libs.play.services.maps)
+
+    //network state observer
+    implementation(libs.network.state.observer)
+
+    //track location
+    implementation(libs.track.me)
+
+    //preference storage
+    implementation(libs.simple.store)
+
+    //runtime permissions
+    implementation(libs.accompanist.permissions)
+
 }
