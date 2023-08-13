@@ -1,5 +1,5 @@
 [versions]
-agp = "8.2.0-alpha07"
+agp = "8.2.0-alpha15"
 kotlin = "1.8.10"
 core-ktx = "1.10.1"
 junit = "4.13.2"
@@ -16,6 +16,7 @@ track-me="1.0.1"
 network-state-observer="1.1.2"
 simple-store="1.1.1"
 accompanist-permissions="0.23.1"
+compose-material3="1.2.0-alpha03"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -40,7 +41,7 @@ track-me = { group = "com.github.RhymezxCode", name = "TrackMe", version.ref = "
 network-state-observer = { group = "com.github.RhymezxCode", name = "NetworkStateObserver", version.ref = "network-state-observer" }
 simple-store = { group = "com.github.RhymezxCode", name = "SimpleStore", version.ref = "simple-store" }
 accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist-permissions" }
-
+compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "compose-material3" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

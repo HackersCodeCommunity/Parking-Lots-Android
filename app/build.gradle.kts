@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "io.parkinglots.android"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "io.parkinglots.android"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -86,5 +86,8 @@ dependencies {
 
     //runtime permissions
     implementation(libs.accompanist.permissions)
+
+    //compose material3
+    implementation(libs.compose.material3)
 
 }
